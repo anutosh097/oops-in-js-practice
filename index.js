@@ -50,18 +50,35 @@ Constructor functions
 ***/
 
 
-function Circle(radius){
-//   console.log(this)
-  this.radius = radius
-  this.draw = function(){
-    console.log("drawing constructor functions")
-  }
-}
+// function Circle(radius){
+//  //members of the circle object
+//   let defaultLocation = {
+//     x: 0,
+//     y: 0
+//   }
+//   this.radius = radius
+//   this.draw = function(){
+//     console.log("drawing constructor functions")
+//   }
+//   this.getDefaultLocation = function(){
+//     return defaultLocation
+//   }
 
-const another = new Circle(7)
-console.log(another)
-another.draw()
-console.log(another.constructor)
+  //getters and setters
+//   Object.defineProperty(this, 'defaultLocation', {
+//     get: function(){
+//         return defaultLocation
+//     },
+//     set: function(value){
+//        defaultLocation = value
+//     }
+//   })
+// }
+
+// const another = new Circle(7)
+// console.log(another)
+// another.draw()
+// console.log(another.constructor)
 
 //enumerate all keys and values in an object
 // for (let each in another)
@@ -79,8 +96,8 @@ console.log(another.constructor)
 
 
 //check for presence of a member in an oibject i.e. a property or method
-if("draw" in another)
-    console.log("yes draw() is there")
+// if("draw" in another)
+//     console.log("yes draw() is there")
 
 
 
@@ -117,13 +134,56 @@ Innovative constructor functions
 // console.log(Sunil)
 // Sunil.level()
 
+/******************
+Design a stopwatch 
+*******************/
+
+// function Watch() {
+//     let startTime, stopTime, running, duration = 0;
 
 
 
+//     this.start = function () {
+//         if(running) {
+//             throw new Error('Stopwatch has already started')
+//         } else {
+//             running = true;
+//         }
+
+//         startTime = new Date();
+//     };
 
 
+//     this.stop = function () {
+//         if(!running) {
+//             throw new Error('Stopwatch has already been stopped')
+//         } else {
+//             running = false;
+           
+//         }
+//         stopTime = new Date();
+//         const seconds = (stopTime.getTime() - startTime.getTime()) / 1000;
+//         duration += seconds;
+//     };
 
+//     this.reset = function () {
+//         startTime = null;
+//         stopTime = null;
+//         running = 0;
+//         duration = 0;
+//     };
 
+//     Object.defineProperty(this, 'duration', {
+//         get: function() {
+//             return duration;
+//         }
+//     })
+// }
+// const w = new Watch();
+w.start()
+w.stop()
+w.duration
+w.restart()
 
 
 
