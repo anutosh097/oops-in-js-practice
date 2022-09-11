@@ -180,10 +180,35 @@ Design a stopwatch
 //     })
 // }
 // const w = new Watch();
-w.start()
-w.stop()
-w.duration
-w.restart()
+// w.start()
+// w.stop()
+// w.duration
+// w.restart()
+
+/**************************************************************************************************************************
+ What is a prototype?
+ -A prototype is just the parent of an object. It is a regular object. 
+ What is protoypical inheritance?
+ -Objects can inherit propertiers and methods from it's parent/prototype except the root object/object base. There can be single level inheritance and multiple level inheritance.
+ For example lieral objects or objects created from constructor functions have single level of inheritance whereas arrays and functions have
+ multiple level of inheritance.
+ **************************************************************************************************************************/
+
+//  let identity = {
+//     name: "Anutosh",
+//     place: "Bengaluru",
+//     state: "Karnataka"
+//  }
+
+//  console.log(identity)
+//  console.log(Object.getPrototypeOf(identity)) //get prototype of identity lieral object - single level inheritance - prototype is root object
+
+
+//  let friends = ["Jagdish","Sunil", "Gautam"]
+// console.log(friends)
+// console.log(Object.getPrototypeOf(friends)) //get prototype of friends array 
+// ObjectBase(root object) -> ArrayBase -> friends array - multi level inheritance
+
 
 
 
